@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf) format("truetype"),
+    url(../fonts/Poppins-Regular.ttf) format("truetype"),
+    url(../fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+
+  // -------- section class="wrapper_left" ---------
+
+  .wrapper_left {
+    background-color: #e2f0ff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 175px 0 225px 0;
+
+    .img-main {
+      background-image: url(../assets/img-main.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 524px;
+      height: 391px;
+    }
+
+    h1 {
+      font: 600 26px "Poppins";
+      color: #292731;
+      width: 400px;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    p {
+      font: 400 16px "Poppins";
+      color: #455360;
+      width: 390px;
+      text-align: center;
+      padding-top: 25px;
+    }
+  }
+
+  // -------- section class="wrapper_right" ---------
+
+  .wrapper_right {
+    background-color: #f5f5f5;
+    padding: 170px 155px 0 135px;
+
+    .img-wavingHand {
+      background-image: url(../assets/img-wavingHand.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+
+    h1 {
+      font: 600 30px "Poppins";
+      color: #292731;
+      padding-top: 13px;
+    }
+
+    h3 {
+      font: 400 16px "Poppins";
+      color: #292731;
+      padding-top: 12px;
+    }
+
+    .emailReference {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 62px;
+
+      p {
+        font: 500 16px "Poppins";
+        color: #455360;
+      }
+
+      .img-ref {
+        background-image: url(../assets/img-ref.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .emailOrNumber {
+      width: 440px;
+      height: 48px;
+      background-color: #ecf2f7;
+      border-radius: 4px;
+      padding-left: 22px;
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      font: 400 18px "Poppins";
+      color: #292731;
+
+      &::placeholder {
+        font: 400 16px "Poppins";
+        color: #7b8389;
+        opacity: 0.4;
+      }
+    }
+
+    .pass {
+      font: 500 16px "Poppins";
+      color: #455360;
+      padding-top: 30px;
+    }
+
+    .password {
+      width: 440px;
+      height: 48px;
+      background-color: #ecf2f7;
+      border-radius: 4px;
+      padding-left: 22px;
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      font: 400 18px "Poppins";
+      color: #292731;
+
+      &::placeholder {
+        font: 400 16px "Poppins";
+        color: #7b8389;
+        opacity: 0.4;
+      }
+    }
+
+    .btn {
+      background-color: #4c70ff;
+      border-radius: 8px;
+      height: 54px;
+      width: 440px;
+      font: 500 20px "Poppins";
+      color: #ffffff;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 44px;
+
+      &:hover {
+        background-color: #4065f7;
+      }
+    }
+
+    .signUp {
+      font: 500 16px "Poppins";
+      color: #292731;
+      text-align: center;
+      padding-top: 20px;
+      a {
+        color: #66bce8;
+        text-decoration: none;
+
+        &:hover {
+          color: #35a8e2;
+        }
+      }
+    }
+  }
+}
