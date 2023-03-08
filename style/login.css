@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-Medium.ttf) format("truetype"), url(../fonts/Poppins-Regular.ttf) format("truetype"), url(../fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .wrapper_left {
+  background-color: #e2f0ff;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 175px 0 225px 0;
+}
+body .wrapper_left .img-main {
+  background-image: url(../assets/img-main.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 524px;
+  height: 391px;
+}
+body .wrapper_left h1 {
+  font: 600 26px "Poppins";
+  color: #292731;
+  width: 400px;
+  text-align: center;
+  padding-top: 50px;
+}
+body .wrapper_left p {
+  font: 400 16px "Poppins";
+  color: #455360;
+  width: 390px;
+  text-align: center;
+  padding-top: 25px;
+}
+body .wrapper_right {
+  background-color: #f5f5f5;
+  padding: 170px 155px 0 135px;
+}
+body .wrapper_right .img-wavingHand {
+  background-image: url(../assets/img-wavingHand.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+}
+body .wrapper_right h1 {
+  font: 600 30px "Poppins";
+  color: #292731;
+  padding-top: 13px;
+}
+body .wrapper_right h3 {
+  font: 400 16px "Poppins";
+  color: #292731;
+  padding-top: 12px;
+}
+body .wrapper_right .emailReference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 62px;
+}
+body .wrapper_right .emailReference p {
+  font: 500 16px "Poppins";
+  color: #455360;
+}
+body .wrapper_right .emailReference .img-ref {
+  background-image: url(../assets/img-ref.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+body .wrapper_right .emailOrNumber {
+  width: 440px;
+  height: 48px;
+  background-color: #ecf2f7;
+  border-radius: 4px;
+  padding-left: 22px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  font: 400 18px "Poppins";
+  color: #292731;
+}
+body .wrapper_right .emailOrNumber::-webkit-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .emailOrNumber::-moz-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .emailOrNumber:-ms-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .emailOrNumber::-ms-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .emailOrNumber::placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .pass {
+  font: 500 16px "Poppins";
+  color: #455360;
+  padding-top: 30px;
+}
+body .wrapper_right .password {
+  width: 440px;
+  height: 48px;
+  background-color: #ecf2f7;
+  border-radius: 4px;
+  padding-left: 22px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  font: 400 18px "Poppins";
+  color: #292731;
+}
+body .wrapper_right .password::-webkit-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .password::-moz-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .password:-ms-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .password::-ms-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .password::placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .btn {
+  background-color: #4c70ff;
+  border-radius: 8px;
+  height: 54px;
+  width: 440px;
+  font: 500 20px "Poppins";
+  color: #ffffff;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 44px;
+}
+body .wrapper_right .btn:hover {
+  background-color: #4065f7;
+}
+body .wrapper_right .signUp {
+  font: 500 16px "Poppins";
+  color: #292731;
+  text-align: center;
+  padding-top: 20px;
+}
+body .wrapper_right .signUp a {
+  color: #66bce8;
+  text-decoration: none;
+}
+body .wrapper_right .signUp a:hover {
+  color: #35a8e2;
+}
