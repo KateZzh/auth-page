@@ -181,6 +181,48 @@ body .wrapper_right .password::placeholder {
   color: #7b8389;
   opacity: 0.4;
 }
+body .wrapper_right .confPass {
+  font: 500 16px "Poppins";
+  color: #455360;
+  padding-top: 30px;
+}
+body .wrapper_right .confirmPassword {
+  width: 440px;
+  height: 48px;
+  background-color: #ecf2f7;
+  border-radius: 4px;
+  padding-left: 22px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  font: 400 18px "Poppins";
+  color: #292731;
+}
+body .wrapper_right .confirmPassword::-webkit-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .confirmPassword::-moz-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .confirmPassword:-ms-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .confirmPassword::-ms-input-placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
+body .wrapper_right .confirmPassword::placeholder {
+  font: 400 16px "Poppins";
+  color: #7b8389;
+  opacity: 0.4;
+}
 body .wrapper_right .btn {
   background-color: #4c70ff;
   border-radius: 8px;
