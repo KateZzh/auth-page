@@ -24,25 +24,22 @@ document.querySelector(".btn").addEventListener("click", () => {
   } catch (error) {
     if (
       error.message == "Неверный формат электронной почты или номера телефона"
-    ) {
+    )
       inpLogin.style = "border: 1px solid red";
-    } else if (error.message == "Пароль не должен быть менее 8 символов") {
+    if (error.message == "Пароль не должен быть менее 8 символов")
       password.style = "border: 1px solid red";
-    }
-    imgRef.style = "background-image: url(../assets/img-refRed.png)";
 
+    imgRef.style = "background-image: url(../assets/img-refRed.png)";
     alert(error.message);
   }
 });
 
-document.querySelector(".emailOrNumber").addEventListener("click", function () {
-  const imgRef = document.querySelector(".img-ref");
+inpLogin.addEventListener("click", function () {
   imgRef.style = "background-image: url(../assets/img-ref.svg)";
   this.style = "border: none";
 });
 
-document.querySelector(".password").addEventListener("click", function () {
-  const imgRef = document.querySelector(".img-ref");
+password.addEventListener("click", function () {
   imgRef.style = "background-image: url(../assets/img-ref.svg)";
   this.style = "border: none";
 });
