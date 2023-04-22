@@ -61,14 +61,11 @@ class SignUpPage {
     if (
       !/^[A-Za-z0-9\.]+@\w{1,20}\.[A-ZZa-z]{1,10}$/gm.test(inpLogin_.value) &&
       !/^(\+375|80|375)(44|29|33|25)[0-9]{7,7}$/gm.test(inpLogin_.value)
-    )
-      throw new Error("Неверный формат электронной почты или номера телефона");
+    ) throw new Error("Неверный формат электронной почты или номера телефона");
 
-    if (password1_.value.length < 8)
-      throw new Error("Пароль не должен быть менее 8 символов");
+    if (password1_.value.length < 8) throw new Error("Пароль не должен быть менее 8 символов");
 
-    if (password2_.value !== password1_.value)
-      throw new Error("Пароли не совпадают");
+    if (password2_.value !== password1_.value) throw new Error("Пароли не совпадают");
   }
 
   doAuth(inpLogin, password1, password2) {
@@ -82,15 +79,9 @@ class SignUpPage {
         password1.value = "";
         password2.value = "";
       } catch (error) {
-        if (
-          error.message ==
-          "Неверный формат электронной почты или номера телефона"
-        )
-          inpLogin.style = "border: 1px solid red";
-        if (error.message == "Пароль не должен быть менее 8 символов")
-          password1.style = "border: 1px solid red";
-        if (error.message == "Пароли не совпадают")
-          password2.style = "border: 1px solid red";
+        if (error.message == "Неверный формат электронной почты или номера телефона") inpLogin.style = "border: 1px solid red";
+        if (error.message == "Пароль не должен быть менее 8 символов") password1.style = "border: 1px solid red";
+        if (error.message == "Пароли не совпадают") password2.style = "border: 1px solid red";
 
         imgRef.style = "background-image: url(../assets/img-refRed.png)";
         alert(error.message);
